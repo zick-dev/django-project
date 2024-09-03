@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+My_site
+{% endblock %}
+{%  block css_files %}
+    <link rel="stylesheet" href="{% static 'Site/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<header>
+      <div class="container">
+         <div id="branding">
+            <h1><span class="highlight">zenet_space</span> web design</h1>
+         </div>
+         <nav>
+            <ul>
+               <li class="current"><a href="">Home</a></li>
+               <li><a href="/about">About</a></li>
+               <li><a href="/services">Services</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <section id="showcase">
+      <div class="container">
+         <h1>Affordable professional web design</h1>
+         <p>
+            we design websites for global businesses. whether you are a start-up or an established  business,
+            we are ready to assist you at every stage of the software development life cycle
+         </p>
+      </div>
+   </section>
+   <section id="newsletter">
+      <div class="container">
+         <h1>subscribe to our newsletter</h1>
+         <form>
+             <label>
+                 <input type="email" placeholder="Enter Email..." required>
+             </label>
+             <button type="submit" class="button_1"> Subscribe</button>
+         </form>
+      </div>
+   </section>
+   <section id="boxes">
+      <div class="container">
+         <div class="box">
+            <img src="{% static "Site/img/logo_html.png" %}" alt="html logo">
+            <h3>html markup</h3>
+            <p>Lorem ipsum.</p>
+
+         </div>
+         <div class="box">
+            <img src="{% static "Site/img/css_logo.png" %}" alt="css logo">
+            <h3>css styling</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+
+         </div>
+         <div class="box">
+            <img src="{% static "Site/img/logo_brush.png" %}" alt="react logo">
+            <h3>React development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+         </div>
+      </div>
+   </section>
+   <footer>
+      <p>zenet_space web design, copyright &copy; 2024</p>
+   </footer>
+{% endblock %}

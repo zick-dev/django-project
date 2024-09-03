@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    services
+{% endblock %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'Site/index.css' %}">
+{% endblock %}
+{% block content %}
+   <header>
+      <div class="container">
+         <div id="branding">
+            <h1><span class="highlight">zenet_space</span> web design</h1>
+         </div>
+         <nav>
+            <ul>
+               <li ><a href="/">Home</a></li>
+               <li><a href="/about">About</a></li>
+               <li class="current"><a href="/services">Services</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <section id="newsletter">
+      <div class="container">
+         <h1>subscribe to our newsletter</h1>
+         <form>
+            <input type="email" placeholder="Enter Email..." required>
+            <button type="submit" class="button_1"> Subscribe</button>
+         </form>
+      </div>
+   </section>
+   <section id="main">
+      <div class="container">
+         <article id="main-col">
+            <h1 class="page-title"> Services</h1>
+            <ul id="services">
+               <li>
+                  <h3> website Design</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repudiandae, amet fugit exercitationem sapiente eaque, similique eius iure sunt reiciendis, neque temporibus aut cumque provident.
+                      Voluptas praesentium odio ullam repellat ut?</p>
+                      <p>pricing: $1,000 - $3,000</p>
+               </li>
+               <li>
+                  <h3>Website Maintenance</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Fugit minima eaque ut eveniet itaque quaerat beatae, impedit doloribus,
+                      quos alias nostrum quis praesentium amet dolor debitis perspiciatis esse natus eius.</p>
+                     <p>pricing: $250 per month</p>
+               </li>
+               <li>
+                  <h3>Web Hosting</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Asperiores reiciendis culpa, quis sequi adipisci tempora beatae, 
+                     error perspiciatis at eaque eum voluptatum eveniet id atque? Ex praesentium velit est optio.</p>
+                     <p>pricing: $25</p>
+               </li>
+            </ul>
+         </article>
+         <aside id="sidebar">
+            <div class="dark">
+               <h3> Get a quote</h3>
+               <form class="quote">
+                  <div>
+                     <label >Name</label><br>
+                     <input type="text" placeholder="Name">
+                  </div>
+
+                  <div>
+                     <label > Email</label><br>
+                     <input type="email" placeholder="Email address">
+                  </div>
+                  <div>
+                     <label > Message</label><br>
+                     <textarea placeholder="message"></textarea>
+                  </div>
+                  <button class="button_1" type="submit">send</button>
+               </form>
+            </div>
+         </aside>
+      </div>
+   </section>
+
+   <footer>
+      <p>zenet_space web design, copyright &copy; 2024</p>
+   </footer>
+{% endblock %}
